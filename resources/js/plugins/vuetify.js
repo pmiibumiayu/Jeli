@@ -10,9 +10,9 @@ const options = {
     light: true,
     themes: {
       light: {
-        primary: colors.blue.darken2,
-        accent: colors.grey.darken3,
-        secondary: colors.amber.darken3,
+        primary: "#119DA4",
+        accent: "3D87E4",
+        secondary: "#171b34",
         info: colors.teal.lighten1,
         warning: colors.amber.base,
         error: colors.deepOrange.accent4,

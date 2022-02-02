@@ -1,39 +1,98 @@
 <template>
-  <guest-layout>
-    <v-app-bar color="primary" :clipped-left="false" fixed dark app>
-      <v-toolbar-title v-text="appName" />
-      <v-spacer />
-      <Link v-if="$page.props.auth.user" :href="route('home')">
-        <v-btn text>Home</v-btn>
-      </Link>
-      <div v-else>
-        <Link :href="route('login')">
-          <v-btn text>Login</v-btn>
-        </Link>
-        <Link :href="route('register')">
-          <v-btn text>Register</v-btn>
-        </Link>
-      </div>
-    </v-app-bar>
-    <v-main>
-      <v-container>
-        <v-card>
-          <v-card-title>Welcome to Laravel Inertia Vuetify</v-card-title>
-        </v-card>
-      </v-container>
+  <v-app>
+    <navigation :color="color" :flat="flat" />
+    <v-main class="pt-0">
+      <home />
+      <about />
+      <download />
+      <pricing />
+      <contact />
     </v-main>
-  </guest-layout>
+    <v-scale-transition>
+      <v-btn
+        fab
+        v-show="fab"
+        v-scroll="onScroll"
+        dark
+        fixed
+        bottom
+        right
+        color="secondary"
+        @click="toTop"
+      >
+        <v-icon>mdi-arrow-up</v-icon>
+      </v-btn>
+    </v-scale-transition>
+    <foote />
+  </v-app>
 </template>
 
+<style scoped>
+.v-main {
+  background-image: url("../../img/bgMain.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+
 <script>
-import ApplicationLogo from '../components/ApplicationLogo.vue'
-import GuestLayout from '../layouts/GuestLayout.vue'
+import navigation from "../components/landing/Navigation";
+import foote from "../components/landing/Footer";
+import home from "../components/landing/HomeSection";
+import about from "../components/landing/AboutSection";
+import download from "../components/landing/DownloadSection";
+import pricing from "../components/landing/PricingSection";
+import contact from "../components/landing/ContactSection";
+
 export default {
-  components: { ApplicationLogo, GuestLayout },
-  computed: {
-    appName() {
-      return this.$page.props.appName
+  name: "App",
+
+  components: {
+    navigation,
+    foote,
+    home,
+    about,
+    download,
+    pricing,
+    contact,
+  },
+
+  data: () => ({
+    fab: null,
+    color: "",
+    flat: null,
+  }),
+
+  created() {
+    const top = window.pageYOffset || 0;
+    if (top <= 60) {
+      this.color = "transparent";
+      this.flat = true;
+    }
+  },
+
+  watch: {
+    fab(value) {
+      if (value) {
+        this.color = "secondary";
+        this.flat = false;
+      } else {
+        this.color = "transparent";
+        this.flat = true;
+      }
     },
   },
-}
+
+  methods: {
+    onScroll(e) {
+      if (typeof window === "undefined") return;
+      const top = window.pageYOffset || e.target.scrollTop || 0;
+      this.fab = top > 60;
+    },
+    toTop() {
+      this.$vuetify.goTo(0);
+    },
+  },
+};
 </script>
