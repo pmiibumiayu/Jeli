@@ -5,11 +5,9 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4">Vuetify.js</h1>
+              <h1 class="display-2 font-weight-bold mb-4">JeLi</h1>
               <h1 class="font-weight-light">
-                Lorem ipsum dolor sit amet consectetur <br />
-                adipisicing elit. Maiores porro voluptatibus <br />
-                delectus nam optio harum!
+                JeLi adalah singkatan dari "Jendela Literasi", yaitu platform sistem informasi perpustakaan berbasis web milik PMII Bumiayu, disediakan untuk memudahkan sahabat-sahabati dalam menemukan pustaka guna mengakses jendela dunia
               </h1>
               <v-btn
                 rounded
@@ -19,7 +17,7 @@
                 @click="$vuetify.goTo('#features')"
                 class="mt-5"
               >
-                Saiba mais
+                Ringkasan Pustaka
                 <v-icon class="ml-2">mdi-arrow-down</v-icon>
               </v-btn>
               <div class="video d-flex align-center py-4">
@@ -62,7 +60,7 @@
                     />
                   </svg>
                 </a>
-                <p class="subheading ml-2 mb-0">Assista o vídeo</p>
+                <p class="subheading ml-2 mb-0">Intro JeLi</p>
               </div>
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
