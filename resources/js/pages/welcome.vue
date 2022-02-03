@@ -3,7 +3,7 @@
     <navigation :color="color" :flat="flat" />
     <v-main class="pt-0">
       <home />
-      <about />
+      <kategori />
       <download />
       <pricing />
       <contact />
@@ -40,7 +40,7 @@
 import navigation from "../components/landing/Navigation";
 import foote from "../components/landing/Footer";
 import home from "../components/landing/HomeSection";
-import about from "../components/landing/AboutSection";
+import kategori from "../components/landing/KategoriSection";
 import download from "../components/landing/DownloadSection";
 import pricing from "../components/landing/PricingSection";
 import contact from "../components/landing/ContactSection";
@@ -52,7 +52,7 @@ export default {
     navigation,
     foote,
     home,
-    about,
+    kategori,
     download,
     pricing,
     contact,

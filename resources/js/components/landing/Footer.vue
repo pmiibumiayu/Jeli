@@ -15,14 +15,13 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
-        Mauris cursus commodo interdum.
+        Jendela Literasi Komisariat Arya Suralaya Bumiayu.
       </v-card-text>
 
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Calango WEB</strong>
+        {{ new Date().getFullYear() }} — <strong>JeLi | PMII Bumiayu</strong>
       </v-card-text>
     </v-card>
   </v-footer>

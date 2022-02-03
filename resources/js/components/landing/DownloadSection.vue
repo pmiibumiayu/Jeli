@@ -8,7 +8,7 @@
               <v-img src="/images/ill2.svg" class="d-block ml-auto mr-auto" max-width="350px" />
             </v-col>
             <v-col cols="12" sm="8" class="white--text text-left">
-              <h1 class="font-weight-light display-2 mb-2">Baixar Demonstração</h1>
+              <h1 class="font-weight-light display-2 mb-2">Mekanisme JeLi</h1>
               <h1 class="font-weight-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ex
                 animi quod laboriosam vel blanditiis labore alias, aliquid,
@@ -18,7 +18,7 @@
                 <v-icon class="mr-2">
                   mdi-github
                 </v-icon>
-                Git Hub
+                Pinjam
               </v-btn>
             </v-col>
           </v-row>
