@@ -99,10 +99,10 @@ export default {
     isXs: false,
     items: [
       ["mdi-home-outline", "Beranda", "#hero"],
-      ["mdi-information-outline", "Pustaka", "#features"],
-      ["mdi-download-box-outline", "Mekanisme", "#download"],
-      ["mdi-currency-usd", "Prakata", "#pricing"],
-      ["mdi-email-outline", "Hubungi", "#contact"],
+      ["mdi-book-open-page-variant-outline", "Pustaka", "#features"],
+      ["mdi-information-outline", "Mekanisme", "#download"],
+      ["mdi-comment-quote-outline", "Prakata", "#pricing"],
+      ["mdi-human-greeting-proximity", "Hubungi", "#contact"],
     ],
   }),
   props: {

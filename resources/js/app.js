@@ -10,6 +10,8 @@ import vuetify from "./plugins/vuetify";
 import { InertiaProgress } from "@inertiajs/progress";
 
 Vue.use(InertiaPlugin);
+import VueYouTubeEmbed from 'vue-youtube-embed'
+Vue.use(VueYouTubeEmbed)
 Vue.component("Link", Link);
 Vue.mixin({ methods: { route: window.route } });
 const app = document.getElementById("app");

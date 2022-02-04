@@ -7,7 +7,10 @@
             <v-col cols="12" md="6" xl="8">
               <h1 class="display-2 font-weight-bold mb-4">JeLi</h1>
               <h1 class="font-weight-light">
-                JeLi adalah singkatan dari "Jendela Literasi", yaitu platform sistem informasi perpustakaan berbasis web milik PMII Bumiayu, disediakan untuk memudahkan sahabat-sahabati dalam menemukan pustaka guna mengakses jendela dunia
+                JeLi adalah singkatan dari "Jendela Literasi", yaitu platform
+                sistem informasi perpustakaan berbasis web milik PMII Bumiayu,
+                disediakan untuk memudahkan sahabat-sahabati dalam menemukan
+                pustaka guna mengakses jendela dunia
               </h1>
               <v-btn
                 rounded
